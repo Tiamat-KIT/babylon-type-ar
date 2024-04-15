@@ -1,0 +1,20 @@
+{
+  "name": "babylon-type-ar",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node ."
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^7.2.1",
+    "@types/babylonjs": "^2.4.1",
+    "ts-loader": "^9.5.1"
+  }
+}
