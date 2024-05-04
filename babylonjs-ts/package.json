@@ -16,6 +16,7 @@
   "dependencies": {
     "@babylonjs/core": "^7.2.1",
     "@types/babylonjs": "^2.4.1",
+    "@types/webxr": "^0.5.16",
     "ts-loader": "^9.5.1"
   }
 }

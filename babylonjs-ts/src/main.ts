@@ -1,6 +1,6 @@
 import {Engine} from "@babylonjs/core/Engines/engine";
 import {Scene} from "@babylonjs/core/scene";
-import { ArcRotateCamera, nativeOverride } from "@babylonjs/core";
+import { ArcRotateCamera, /* nativeOverride */ } from "@babylonjs/core";
 import { HemisphericLight } from "@babylonjs/core";
 import { Vector3 } from "@babylonjs/core";
 import { Color3 } from "@babylonjs/core";
@@ -39,18 +39,12 @@ window.addEventListener('DOMContentLoaded', async() => {
         ground.receiveShadows = true;
 
         if(navigator.xr){
-            const xr = await scene.createDefaultXRExperienceAsync({
+            /* const xr = */ await scene.createDefaultXRExperienceAsync({
                 uiOptions:{
                     sessionMode: "immersive-ar",
                 },
             })
         }
-
-        /* const xr = await scene.createDefaultXRExperienceAsync({
-            uiOptions:{
-                sessionMode: "immersive-ar",
-            },
-        }) */
 
         return scene
     }
